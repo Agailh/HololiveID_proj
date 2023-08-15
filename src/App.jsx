@@ -6,14 +6,17 @@ import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import Talents from './Components/Talents'
 
+
 function App() {
   
+ 
 
   return (
     <>
       <Navbar />
       <Home />
-      <Talents/>
+      <Talents />
+    
       
     </>
   )
