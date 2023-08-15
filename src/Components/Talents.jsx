@@ -6,7 +6,12 @@ import ModalImage from "react-modal-image";
 import Moona from '../assets/Moona_3d.png'
 import Risu from '../assets/Risu_3d.png'
 import Iofi from '../assets/Yopi_3d.png'
-
+import Ollie from '../assets/Ollie.png'
+import Anya from '../assets/Anya.png'
+import Reine from '../assets/reine.png'
+import Zeta from '../assets/jetaaaa.png'
+import Ela from '../assets/Ela.png'
+import Kobo from '../assets/kobo.png'
 const Talents = () => {
     const images = [
         {
@@ -42,6 +47,73 @@ const Talents = () => {
           lore3: `earth and fell in love with earth’s culture.`
           
         },
+        {
+            original: Ollie,
+            thumbnail: Ollie,
+            color:'#B7030e',
+            description: "Kureiji Ollie 🧟‍♀️",
+            subdesc:'"ZOMBANWA!! SUPER KAWAII ZOMBIE IDOL,  ',
+            lore:`KU KU KU KUREIJI OLLIE DESU~!!" A zombie high school girl risen `,
+            lore2: `from her grave. She headed home, relying on memories`,
+            lore3: `retained from when she was still alive.`
+            
+          },
+        {
+            original: Anya,
+            thumbnail: Anya,
+            color:'#f2c95c',
+            description: "Anya Melfisa 🍂 ",
+            subdesc:'"Good day! This is Anya Melfissa from hololive ID 2nd Generation."',
+            lore:`An ancient weapon known as “Keris,” she was granted human`,
+            lore2: `form through a mystical ritual performed by her master.`,
+            lore3: `She’s just about always sleeping or playing games.`
+            
+          },
+        {
+            original: Reine,
+            thumbnail: Reine,
+            color:'#0f52ba',
+            description: "Pavolia Reine 🦚",
+            subdesc:'"Perhatian, sang putri merak yang tertiup angin, aku Pavolia"',
+            lore:` Reine dari hololive ID.Lady of the Peafowl. While studying at a `,
+            lore2: `magic academy, she was involved in an incident `,
+            lore3: `and transferred to the human world.`
+            
+          },
+        {
+            original: Zeta,
+            thumbnail: Zeta,
+            color:'#bab9c3',
+            description: "Vestia Zeta 📜",
+            subdesc:'She is the mysterious 7th recruit of The Secret Archive Unit ',
+            lore:`that has a full license to collect virtual data.Despite her being`,
+            lore2: ` a promising rookie, who is also known as codename V.7, she turns`,
+            lore3: ` clumsy when things are not going exactly according to the manual.`
+            
+          },
+        {
+            original: Ela,
+            thumbnail: Ela,
+            color:'#ff3d3d',
+            description: "Kaela Kovalskia 🔨",
+            subdesc:`After taking over her great blacksmithing teacher's forge, she felt  `,
+            lore:`a lack of excitement in her life.So, she decided to be free and depart `,
+            lore2: `on a journey to find rare smithing materials,one of which was  `,
+            lore3: `rumored to be under the building of a certain "idol group" in town.`
+            
+          },
+        {
+            original: Kobo,
+            thumbnail: Kobo,
+            color:'#393464',
+            description: "Kobo Kanaeru ☔",
+            subdesc:'A carefree girl who lives in the topmost room of a lighthouse, ',
+            lore:`she is actually the bloodline of the strongest rain shaman in`,
+            lore2: `the area. She has great potential to control rain, but she does`,
+            lore3: `not like to do it as a task.`
+            
+          },
+           
       ];
       const [lightboxImageIndex, setLightboxImageIndex] = useState(null);
 
@@ -75,10 +147,10 @@ const Talents = () => {
                 <h2 className="text-lg  mb-2 text-white font-bold md:text-4xl">
                   {item.description}
                 </h2>
-                <p className="text-gray-600 text-center pt-5">{item.subdesc}</p>
-                <p className="text-gray-600 text-center pt-5">{item.lore}</p>
-                <p className="text-gray-600 text-center pt-5">{item.lore2}</p>
-                <p className="text-gray-600 text-center pt-5">{item.lore3}</p>
+                <p className="text-gray-600 text-center text-white pt-5">{item.subdesc}</p>
+                <p className="text-gray-600 text-center text-white pt-5">{item.lore}</p>
+                <p className="text-gray-600 text-center text-white pt-5">{item.lore2}</p>
+                <p className="text-gray-600 text-center text-white pt-5">{item.lore3}</p>
               </div>
             </div>
           )}
