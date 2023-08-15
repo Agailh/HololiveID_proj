@@ -6,6 +6,8 @@ import videosrc from '../assets/tokinosoralive.mp4'
 const About = () => {
    
   return (
+   
+
     <div className='w-full h-screen bg-[#43C5F5]'>
          <div className="flex flex-col items-center justify-center h-screen">
             <h1 className="text-xl md:text-3xl text-white font-bold text-center mb-4">Live Streaming </h1>
@@ -13,6 +15,7 @@ const About = () => {
             <video src={videosrc} autoPlay loop  className='w-[1080px]'/>
         </div>
     </div>
+    
   )
 }
 
