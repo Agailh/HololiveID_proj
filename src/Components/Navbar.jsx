@@ -1,40 +1,40 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import react ,{ useState } from "react"
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
-const Navbar = () => {
-  return (
-    
-        <nav className='bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700'>
-            <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-            <a href="https://flowbite.com/" className="flex items-center">
-                <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-            </a>
-          
-    <div className="hidden w-full md:block md:w-auto" id="navbar-default bf">
-      <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-        </li>
-        <li>
-          <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-        </li>
-        <li>
-          <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-        </li>
-        <li>
-          <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-        </li>
-      </ul>
-    </div>
 
+
+    const Navbar = () => {
+        const [nav, setNav] = useState(false);
+      
+        const handleNav = () => {
+          setNav(!nav);
+        };
+      
+        return (
+          <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-black'>
+            <h1 className='w-full text-3xl font-bold text-[#43C5F5]'>HololiveID</h1>
+            <ul className='hidden md:flex bg-[#43C5F5] rounded-full text-white font-semibold cursor-pointer'>
+              <li className='p-4'>Home</li>
+              <li className='p-4'>Talent</li>
+              <li className='p-4'>Event</li>
+              <li className='p-4'>Schedule</li>
+              <li className='p-4'>Shop</li>
+            </ul>
+            <div onClick={handleNav} className='block md:hidden'>
+                {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
             </div>
-        </nav>
-    
-  )
-}
+            <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-200 bg-[#43C5F5] ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+              <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>HololiveID</h1>
+                <li className='p-4 border-b border-gray-600 text-white font-semibold'>Talent</li>
+                <li className='p-4 border-b border-gray-600 text-white font-semibold'>Event</li>
+                <li className='p-4 border-b border-gray-600 text-white font-semibold'>Schedule</li>
+                <li className='p-4 border-b border-gray-600 text-white font-semibold'>Shop</li>
+               
+            </ul>
+          </div>
+        );
+      };
+      
 
 export default Navbar
