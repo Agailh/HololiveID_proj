@@ -16,20 +16,21 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
             <h1 className='w-full text-3xl font-bold text-[#43C5F5]'>HololiveID</h1>
             <ul className='hidden md:flex bg-[#43C5F5] rounded-full text-white font-semibold cursor-pointer'>
               <li className='p-4'>Home</li>
+              <li className='p-4'>About</li>
               <li className='p-4'>Talent</li>
               <li className='p-4'>Event</li>
               <li className='p-4'>Schedule</li>
-              <li className='p-4'>Shop</li>
+              
             </ul>
             <div onClick={handleNav} className='block md:hidden'>
                 {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
             </div>
             <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-200 bg-[#43C5F5] ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
-              <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>HololiveID</h1>
+              <h1 className='w-full text-3xl font-bold text-white m-4'>HololiveID</h1>
+                <li className='p-4 border-b border-gray-600 text-white font-semibold'>Home</li>
+                <li className='p-4 border-b border-gray-600 text-white font-semibold'>About</li>
                 <li className='p-4 border-b border-gray-600 text-white font-semibold'>Talent</li>
-                <li className='p-4 border-b border-gray-600 text-white font-semibold'>Event</li>
                 <li className='p-4 border-b border-gray-600 text-white font-semibold'>Schedule</li>
-                <li className='p-4 border-b border-gray-600 text-white font-semibold'>Shop</li>
                
             </ul>
           </div>

@@ -5,6 +5,8 @@ import { useState } from 'react'
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import Talents from './Components/Talents'
+import Events from './Components/Events'
+import About from './Components/About'
 
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <About />
       <Talents />
+      <Events/>
     
       
     </>
