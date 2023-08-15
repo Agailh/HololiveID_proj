@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import videoSource from '../assets/tokinosoralive.mp4'
+
 
 const Video1 = ({ videoSource }) => {
   const videoRef = useRef(null);
