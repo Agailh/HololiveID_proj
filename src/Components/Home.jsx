@@ -41,7 +41,9 @@ const Home = () => {
                 <div className="flex flex-col justify-center md:w-[400px]">
                     <img src={HololiveID} alt="logoid" className='w-72 md:w-full' />
                 <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center text-[#FF7B4C]">Vtuber Agency</h1>
-                <p className="text-base md:text-lg text-gray-600 mb-8 text-justify ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, aliquam culpa optio voluptatibus consequatur adipisci dolorem sit autem. Adipisci commodi, culpa odio totam fuga asperiores earum exercitationem consequuntur ex libero.</p>
+                <p className="text-base md:text-lg text-gray-600 mb-8 text-justify ">With over 50,000,000 fans across all their channels,
+VTuber group hololive is the all-female talent group that
+belongs to the VTuber agency hololive production.</p>
                 <div className="flex justify-start space-x-4">
                     <button className="bg-[#43C5F5] hover:bg-[#0db5f2] text-white px-4 py-2 rounded-full">About Us</button>
                     <button className=" hover:bg-gray-200 text-black px-4 py-2 rounded-full">Youtube Channel</button>
