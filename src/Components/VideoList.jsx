@@ -24,6 +24,7 @@ const VideoList = () => {
   }, [apiKey, channelId]);
 
   return (
+    <div className='w-full h-full bg-gray-100'>
     <div id='schedule' className="container mx-auto py-8 bg-gray-100">
       <h1 className='text-end pr-5 md:pr-[150px] text-4xl font-bold text-[#26C6FF]'>Schedule</h1>
       <h2 className='text-end pb-8 pr-5 md:pr-[150px] text-2xl font-semibold text-[#FC8054]'>Upcoming and Archived Streams</h2>
@@ -52,6 +53,7 @@ const VideoList = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
