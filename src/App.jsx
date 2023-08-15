@@ -7,11 +7,13 @@ import Home from './Components/Home'
 import Talents from './Components/Talents'
 import Events from './Components/Events'
 import About from './Components/About'
+import VideoList from './Components/VideoList'
 
 
 function App() {
   
- 
+  // const apiKey = 'AIzaSyCP85AhrvlXuQcfhSjauwueVFs5LnKXpUo';
+  // const channelId = 'UCTvHWSfBZgtxE4sILOaurIQ';
 
   return (
     <>
@@ -20,6 +22,7 @@ function App() {
       <About />
       <Talents />
       <Events/>
+      <VideoList  />
     
       
     </>
