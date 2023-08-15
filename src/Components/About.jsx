@@ -8,7 +8,7 @@ const About = () => {
   return (
    
 
-    <div className='w-full h-screen bg-[#43C5F5]'>
+    <div id='about' className='w-full h-screen bg-[#43C5F5]'>
          <div className="flex flex-col items-center justify-center h-screen">
             <h1 className="text-xl md:text-3xl text-white font-bold text-center mb-4">Live Streaming </h1>
             <h2 className="text-lg  md:text-xl text-white font-semibold text-center mb-4">The vast variety of hololive talents’ streams include gaming, singing, chatting with viewers, collaborations, and more! </h2>

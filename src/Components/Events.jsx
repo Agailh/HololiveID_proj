@@ -6,7 +6,7 @@ import Event1 from '../assets/geloraholo.png'
 
 const Events = () => {
   return (
-    <div id='events' className='bg-gray-100 '>
+    <div id='event' className='bg-gray-100 '>
         <h1 className='text-center text-4xl font-bold text-[#26C6FF]'>Events</h1>
         <h2 className='text-center text-2xl font-semibold text-[#FC8054]'>Exciting events that we hold </h2>
         <div className='min-h-screen flex justify-center items-center'>
