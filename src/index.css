@@ -6,3 +6,51 @@
   scroll-behavior: smooth;
 }
 
+.fade-in {
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in.left {
+  animation: slideFromLeft 0.5s ease-in-out forwards;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-in.right {
+  animation: slideFromRight 0.5s ease-in-out forwards;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.visible {
+  animation: none;
+  transform: translateX(0);
+  opacity: 1;
+}
