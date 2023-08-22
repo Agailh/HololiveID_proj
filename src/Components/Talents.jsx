@@ -126,10 +126,10 @@ const Talents = () => {
   };
 
   return (
-    <div id='talent' className='bg-gray-100' >
+    <div id='talent' className='bg-gray-100 pt-10' >
         <h1 className='pl-5 md:pl-[150px] text-4xl font-bold text-[#26C6FF]'>Our Talents</h1>
         <h2 className='pl-5 md:pl-[150px] text-2xl font-semibold text-[#FC8054]'>we have total 9 members in 3 generation</h2>
-    <div className="bg-gray-100 min-h-screen flex justify-center items-center">
+    <div className="bg-gray-100 min-h-screen flex justify-center items-center pb-[110px]">
       <div className="w-full max-w-3xl">
         <Gallery
           items={images}

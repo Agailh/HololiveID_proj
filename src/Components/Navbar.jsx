@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className='sticky top-0 z-50 bg-white shadow-md'>
       <div className='flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-black'>
         <h1 className='w-full text-3xl font-bold text-[#43C5F5]'>HololiveID</h1>
-        <ul className='hidden md:flex bg-[#43C5F5] rounded-full text-white font-semibold cursor-pointer'>
+        <ul className='hidden md:flex bg-[#43C5F5]  rounded-full text-white font-semibold cursor-pointer'>
           <Link to="home" smooth={true} duration={500} offset={-70}>
             <li className='p-4 cursor-pointer'>Home</li>
           </Link>
